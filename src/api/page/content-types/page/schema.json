@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "PAGE"
+    "displayName": "PAGE",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,25 @@
     "slug": {
       "type": "uid",
       "targetField": "title",
+      "required": true
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "section.section-rwo-columns",
+        "section.section-grid",
+        "section.section-content"
+      ],
+      "required": true
+    },
+    "footer_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.menu",
       "required": true
     }
   }
